@@ -7,7 +7,7 @@ const Container = styled(AppBar)`
 `
 
 function Header() {
-    const logo = 'https://cdn2.iconfinder.com/data/icons/circle-icons-1/64/dev-512.png'
+    const logo = 'https://blog.codepen.io/wp-content/uploads/2023/09/logo-white.png'
 
   return (
     <Container position='static'>
