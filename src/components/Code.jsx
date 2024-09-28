@@ -11,7 +11,7 @@ const Container = styled(Box)`
 
 function Code() {
 
-    const {html, setHtml, css, setCss, js, setjs} = useContext(DataContext)
+    const {html, setHtml, css, setCss, js, setJs} = useContext(DataContext)
 
   return (
     <Container>
@@ -34,7 +34,7 @@ function Code() {
             icon="{ }"
             color="#FCD000"
             value={js}
-            onChange={setjs}
+            onChange={setJs}
         />
     </Container>
   )

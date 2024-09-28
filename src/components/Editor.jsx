@@ -67,9 +67,9 @@ function Editor({ heading, icon, color, value, onChange }) {
                 />
             </Header>
             <ControlledEditor 
+                onBeforeChange={handleChange}
                 className='controlled-editor'
                 value={value}
-                onBeforeChange={handleChange}
                 options={{
                     theme: 'material',
                     lineNumbers: true
