@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import React, { useContext, useEffect } from 'react'
 import Editor from './Editor'
 import { Box, styled } from '@mui/material'
 import { DataContext } from '../context/DataProvider'
@@ -12,6 +12,30 @@ const Container = styled(Box)`
 function Code() {
 
     const {html, setHtml, css, setCss, js, setJs} = useContext(DataContext)
+
+    // Load saved code from localStorage when the component mounts
+    useEffect(() => {
+        const savedHtml = localStorage.getItem('htmlCode');
+        const savedCss = localStorage.getItem('cssCode');
+        const savedJs = localStorage.getItem('jsCode');
+
+        if (savedHtml) setHtml(savedHtml);
+        if (savedCss) setCss(savedCss);
+        if (savedJs) setJs(savedJs);
+    }, [setHtml, setCss, setJs]);
+
+    // Save code to localStorage whenever it changes
+    useEffect(() => {
+        localStorage.setItem('htmlCode', html);
+    }, [html]);
+
+    useEffect(() => {
+        localStorage.setItem('cssCode', css);
+    }, [css]);
+
+    useEffect(() => {
+        localStorage.setItem('jsCode', js);
+    }, [js]);
 
   return (
     <Container>
