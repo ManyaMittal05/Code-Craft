@@ -12,9 +12,30 @@ CodeCraft is an online code editor built using React that allows users toi write
 
 ## Technologies Used
 - React: JavaScript library for building user interfaces.
-- MUI(Material UI): For styling components ans creating responsive layouts.
+- MUI (Material UI): For styling components ans creating responsive layouts.
 - CodeMirror: A code editor component for syntax highlighting.
 - HTML5, CSS3, JavaScript: Core web technologies for rendering the editor and displaying the output.
 
 
 ## Setup and Installation
+### Prerequisites
+Before you begin, ensure you have the following installed:
+- Node.js (v14 or higher)
+- npm
+
+### Installation Steps
+#### 1. Clone the Repository:
+```bash
+git clone https://github.com/ManyaMittal05/Code-Craft.git
+cd Code-Craft
+```
+
+#### 2. Install dependencies:
+```bash
+npm install
+```
+
+#### 3. Run the Application:
+```bash
+npm run dev
+```
