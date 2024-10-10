@@ -1,7 +1,7 @@
 # CodeCraft
 
 ## Introduction
-CodeCraft is an online code editor built using React that allows users toi write, test and preview HTML, CSS and JavaScript code. The application features a live editor with real time preview of the user's code, enabling users to prototype their ideas.
+CodeCraft is an online code editor built using React that allows users to write, test and preview HTML, CSS and JavaScript code. The application features a live editor with real time preview of the user's code, enabling users to prototype their ideas.
 
 ## Features
 - Three separate code editors for HTML, CSS and JavaScript.
